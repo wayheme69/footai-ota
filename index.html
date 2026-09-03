@@ -12,18 +12,18 @@ a.and{background:linear-gradient(135deg,#3DDC84,#0B7A43)}
 .test b{color:#E8ECF1}</style></head>
 <body><div class="card"><img src="icon.png" alt="FOOT AI"><h1>FOOT AI</h1>
 <p>Build de test · installation directe</p>
-<a class="btn" href="itms-services://?action=download-manifest&amp;url=https://wayheme69.github.io/footai-ota/manifest-v19b77.plist">Installer sur iPhone</a>
-<a class="btn and" href="FootAI-android-v2.3.55.apk">Installer sur Android</a>
-<div class="v">iPhone v19 build 77 · Android v2.3.55<br><br>
-<b>L'écran Résultats a été refait.</b> Chaque match terminé affiche maintenant <b>le pronostic de l'IA et s'il est tombé juste</b> — un bandeau vert avec ✓, ou rouge avec ✕. Avant, on ne voyait que des scores, comme dans n'importe quelle appli de foot, alors que la donnée existait déjà match par match.<br><br>
-La carte de la journée affiche le bilan : <b>« 6 pronostics justes sur 9 · 67 % »</b>, exactement le chiffre de l'onglet Matchs.<br><br>
-<b>Les barres de statistiques sont réparées.</b> L'or et le blanc cassé avaient la même luminosité (contraste 1,0:1) : l'œil ne voyait qu'une seule bande et « corners 0–5 » paraissait vide. Nouveau code couleur, fixe et valable partout : <b>bleu ciel = domicile, orange = extérieur</b>, et le chiffre est écrit dans la couleur de son équipe. C'est la seule paire qui reste lisible pour toutes les formes de daltonisme courantes.</div>
-<div class="v" style="margin-top:14px"><b>Aussi :</b> les cartes passent au bleu roi de l'app (le même que les cartes d'analyse) · le passeur s'affiche sous chaque but (« Passe de O. Giroud ») · une 4ᵉ statistique, les tirs totaux · le score du perdant remonte de 4,3 à 6,2 de contraste · un voile sous l'horloge, la carte de journée ne passe plus derrière.</div>
+<a class="btn" href="itms-services://?action=download-manifest&amp;url=https://wayheme69.github.io/footai-ota/manifest-v19b78.plist">Installer sur iPhone</a>
+<a class="btn and" href="FootAI-android-v2.3.56.apk">Installer sur Android</a>
+<div class="v">iPhone v19 build 78 · Android v2.3.56<br><br>
+<b>La journée affichée dans Résultats est maintenant choisie intelligemment.</b> Avant, l'onglet ouvrait la journée « la plus haute » ayant au moins 1 match joué : avec Real Sociedad–Celta (journée 6 jouée en avance le 3 septembre), l'Espagne aurait ouvert sur « Journée 6 » avec un seul match pendant deux semaines, les 10 résultats du week-end cachés derrière AUTRES. Désormais on ouvre <b>la journée la plus récente qui a vraiment commencé (au moins 3 matchs joués)</b>. Un match isolé avancé ou reporté ne prend plus jamais la place. La règle est calculée sur le serveur : iPhone et Android sont toujours d'accord.<br><br>
+<b>Ligue des Champions / Ligue Europa :</b> à partir du 16 septembre, l'onglet aurait ouvert sur les barrages d'août au lieu de la journée 1 — toute la saison. Ordre des tours corrigé (qualifs → barrages → journées 1-8 → 8ᵉˢ…).<br><br>
+<b>Rafraîchir garde ta journée</b> (iPhone et Android) : tirer pour rafraîchir ou revenir dans l'app ne renvoie plus de force à la dernière journée.<br><br>
+<b>Le bilan en tête de journée</b> (« 7/10 pronostics justes ») est compté sur les matchs affichés : toujours cohérent avec les cartes, et il monte en direct pendant le week-end.<br><br>
+<b>« Voir les détails »</b> est maintenant une vraie pastille blanche : on comprend qu'on peut appuyer.</div>
 <div class="test"><b>À tester :</b><br>
-1. Onglet <b>Résultats</b>, Ligue 1, journée 2 : Lille 2–2 PSG doit afficher un bandeau <b>vert ✓ « Paris SG ou match nul · 68 % »</b>.<br>
-2. Strasbourg 2–1 Lens juste en dessous : bandeau <b>rouge ✕</b>.<br>
-3. En haut de la journée : <b>6/9 pronostics justes, 67 %</b> — compare avec le Bilan IA de l'onglet Matchs, ça doit être identique.<br>
-4. Ouvre « Voir les détails » sur Lille–PSG : les barres doivent être bleu ciel / orange, corners 0–5 doit se voir immédiatement, et « Passe de O. Giroud » sous les buts.<br>
-5. Fais défiler : la carte de journée ne doit plus passer derrière l'horloge.<br>
-6. Change de championnat (Espagne, Italie) : mêmes couleurs partout, jamais celles des maillots.</div>
+1. Onglet <b>Résultats</b> → Espagne : après le match de ce soir (Real Sociedad–Celta), l'onglet doit toujours ouvrir sur la <b>journée 3</b>, et la J6 (1 match) se trouve dans AUTRES. Samedi soir, dès 3 matchs joués, l'onglet passe sur la journée 4 tout seul.<br>
+2. Va dans AUTRES, choisis la journée 1, puis tire pour rafraîchir : tu dois <b>rester sur la journée 1</b>.<br>
+3. Change de championnat (Espagne → Italie) : l'Italie s'ouvre sur sa dernière journée, pas sur le même numéro.<br>
+4. Ligue des Champions → AUTRES : les barrages et les qualifs sont en bas de la liste.<br>
+5. Le bouton <b>« Voir les détails »</b> se voit tout de suite, et le bandeau vert/rouge du pronostic est toujours là.</div>
 </div></body></html>
